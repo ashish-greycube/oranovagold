@@ -8,6 +8,7 @@ def get_previous_manufacture_data(work_order, entry_type, posting_date, posting_
             "stock_entry_type" : entry_type,
             "work_order" : work_order,
             "posting_date" : ["<=", posting_date],
+            "docstatus" : 1,
         },
         fields = ["name"]
     )
@@ -36,6 +37,7 @@ def get_previous_issued_and_received_manufacture_data(work_order, entry_type, po
             "stock_entry_type" : entry_type,
             "work_order" : work_order,
             "posting_date" : ["<=", posting_date],
+            "docstatus" : 1,
         },
         fields = ["name"]
     )
