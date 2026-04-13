@@ -13,6 +13,7 @@ jinja = {
     "methods" : [
         "oranovagold.jinja.get_previous_manufacture_data",
         "oranovagold.jinja.get_previous_issued_and_received_manufacture_data",
+        "oranovagold.jinja.get_previous_manufacture_qty",
     ]
 }
 # required_apps = []
